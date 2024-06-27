@@ -119,5 +119,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
     });
   }
- 
+
+  // Track CV downloads
+  const downloadCvButton = document.querySelector(".download-cv");
+  if (downloadCvButton) {
+    downloadCvButton.addEventListener("click", function () {
+      console.log("CV downloaded");
+      // You can add analytics tracking here if desired
+    });
+  }
 });
