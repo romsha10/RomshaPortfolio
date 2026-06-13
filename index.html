@@ -1,344 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="image.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romsha Ahlawat - Data Scientist</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="portfolio-title">PORTFOLIO</div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <button id="darkModeToggle">🌓</button>
-        </nav>
-    </header>
 
-    <main>
+  <nav>
+    <span class="nav-logo">RA // SYSTEM_INIT</span>
+    
+    <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-        <section id="home">
-            <div class="home-container">
-                <div class="home-image">
-                    <img src="image.png" alt="Home Image">
-                </div>
-                <div class="home-text">
-                    <h1>Romsha Ahlawat</h1>
-                    <p class="tagline">Data Analyst</p>
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                    <a href="CV.pdf" class="cta-button download-cv" download>Download CV</a>
-                </div>
-            </div>
-        </section>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </nav>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Data Analyst with hands-on experience in Power BI, Python, and SQL, specializing in data cleaning, visualization, and modeling.
-                    Proficient in deriving actionable insights from large datasets. Completed multiple data-driven internships and certifications in data
-                    analysis and visualization. Seeking to apply data analysis skills in a dynamic environment.</p>
-                <p>When I'm not analyzing data, you can find me near a canvas.</p>
-            </div>
-        </section>
+  <header class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">MSc Data Science · University of Glasgow</div>
+      <h1 class="hero-name">Romsha<br><span class="accent-glow">Ahlawat</span></h1>
+      <div class="hero-title-line" id="typing-line">
+        <span id="typed"></span><span class="cursor"></span>
+      </div>
+      <p class="hero-desc">
+        I turn raw data into decisions that matter - across healthcare, finance, ESG, and public sector. Published researcher. EdTech founder. Builder of systems that are not just accurate, but <strong class="highlight-text">fair</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/romsha-ahlawat" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/romsha-ahlawat" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://medium.com" target="_blank" rel="noopener">Medium</a>
+        <a href="https://engimy.com" target="_blank" rel="noopener">ENGIMY</a>
+      </div>
+    </div>
 
-        <section id="skills">
-            <div class="container">
-                <h2>My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Data Analysis</h3>
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>Excel</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Data Visualization</h3>
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>C/C++</li>
-                            <li>JAVA</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Power Query</li>
-                            <li>Power Pivot</li>
-                            <li>DAX</li>
-                            <li>MS Azure</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Time Management</li>
-                            <li>Leadership</li>
-                            <li>Communication</li>
-                            <li>Problem Solving</li>
-                            <li>Teamwork</li>
-                            <li>Creativity</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Bachelor of Technology (CSE)</h3>
-                        <p>Bhagwan Mahaveer College of Engineering and Management</p>
-                        <h4>(Guru Gobind Singh Indraprastha University)</h4>
-                        <p>2020 - 2024</p>
-                        <p>CGPA - 9.2</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>Class 12</h3>
-                        <p>Guru Tegh Bahadur Public School</p>
-                        <h4>(CBSE)</h4>
-                        <p>2019 - 2020</p>
-                        <p>Percentage - 88.2%</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>Class 10</h3>
-                        <p>Dayanand Public School</p>
-                        <h4>(CBSE)</h4>
-                        <p>2017 - 2018</p>
-                        <p>Percentage - 96.8%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Data Analytics Intern</h3>
-                        <p>Connecting Dreams Foundation</p>
-                        <p>Feb 2024 - March 2024</p>
-                        <ul>
-                            <li>Designed interactive Power BI dashboards for real-time project tracking.</li>
-                            <li>Cleaned and modeled large datasets with over 10,000 records and applied DAX formulas to derive meaningful
-insights.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>AI & Cloud Intern</h3>
-                        <p>Edunet Foundation</p>
-                        <p>Jan 2024 - Feb 2024</p>
-                        <ul>
-                            <li>Developed an AI chatbot using IBM Watson, which integrated natural language processing with a 70% success
-rate in customer interactions.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>Data Repository Intern</h3>
-                        <p>Ministry of Cooperation</p>
-                        <p>Dec 2022 - Jan 2023</p>
-                        <ul>
-                            <li>Managed a data repository of over 100,000 records, ensuring data integrity and accuracy using advanced
-database management techniques.</li>
-                            <li>Conducted data cleaning and transformation on raw datasets, improving the accuracy of data insights by 15%.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>Android Developer Intern</h3>
-                        <p>SmartInternz</p>
-                        <p>Aug 2022 - Sept 2022</p>
-                        <ul>
-                            <li>Developed android applications like “NOTES APP” and “UNSCRAMBLE” using Kotlin, Android SDK, and Android Studio</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-item">
-                        <h3>Salesforce Developer Intern</h3>
-                        <p>SmartInternz</p>
-                        <p>April 2022 - June 2022</p>
-                        <ul>
-                            <li>Created customized solutions on the Salesforce platform.</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <div class="container">
-                <h2>Certifications</h2>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <h3>Data Analytics Essential</h3>
-                        <p>Cisco</p>
-                        <p>August 2024</p>
-                        <a href="https://www.credly.com/badges/3d2a976a-a4ad-459f-af59-5dd5de1f829c/public_url" target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-
-                    <div class="cert-item">
-                        <h3>Career Essentials in Data Analysis</h3>
-                        <p>Microsoft and LinkedIn</p>
-                        <p>July 2024</p>
-                        <a href="https://www.linkedin.com/learning/certificates/4f3dcd59cbe66914d3040456985137e4515672524c6813adc609e37032186193?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bi%2Bnemw3IQu%2BpVjpau06Reg%3D%3D" target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Data Analytics Consulting Virtual Internship</h3>
-                        <p>KPMG</p>
-                        <p>September 20, 2022</p>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/KPMG%20AU/m7W4GMqeT3bh9Nb2c_KPMG%20AU_ccMqTQxKK8MuxcHcM_1663650654876_completion_certificate.pdf"
-                            target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Data Analytics and Visualization Virtual Experience</h3>
-                        <p>Accenture</p>
-                        <p>September 12, 2022</p>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_ccMqTQxKK8MuxcHcM_1662960832555_completion_certificate.pdf"
-                            target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Digital Skills: Artificial Intelligence</h3>
-                        <p>Accenture</p>
-                        <p>September 12, 2022</p>
-                        <a href="https://drive.google.com/file/d/1IBJ3sSoXHdlMtDGi_wPKwFcIKjnoqCNV/view?usp=sharing" target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Digital Skills: Digital Marketing</h3>
-                        <p>Accenture</p>
-                        <p>September 12, 2022</p>
-                        <a href="https://drive.google.com/file/d/1KYaCOOvVzC-n7kN-ecH7Gkh0gdQ2NO75/view?usp=sharing" target="_blank"
-                            class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Power Programmer Virtual Experience Program</h3>
-                        <p>Infosys</p>
-                        <p>September 13, 2022</p>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Infosys/qyS5w2xfLoFEKAFpH_Infosys_ccMqTQxKK8MuxcHcM_1663085925849_completion_certificate.pdf"
-                            target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Data Visualisation: Empowering Business with Effective Insights</h3>
-                        <p>Tata Group</p>
-                        <p>August 27, 2022</p>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata_ccMqTQxKK8MuxcHcM_1661579741036_completion_certificate.pdf"
-                            target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-item">
-                        <h3>Engineering Virtual Program</h3>
-                        <p>Goldman Sachs</p>
-                        <p>July 10, 2022</p>
-                        <br>
-                        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_ccMqTQxKK8MuxcHcM_1657472135794_completion_certificate.pdf" target="_blank" class="cert-link">View Certificate</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <h3>Road Data Analysis</h3>
-                        <p>Created an interactive Power BI dashboard for road safety data. Cleaned and transformed data with Power Query.</p>
-                        <a href="https://drive.google.com/file/d/16hWMzIWhANmgxOiPnsDIXPvSZkqlvVw6/view?usp=sharing" target="_blank" class="project-link">View Project Screenshot</a>
-                    </div>
-                    
-                    <div class="project-item">
-                        <h3>Crypto Currency Growth Analysis</h3>
-                        <p>Developed Power BI reports analyzing cryptocurrency trends. Integrated data from multiple exchanges.</p>
-                        <a href="https://drive.google.com/file/d/1IGIBbV1afcLB1s_Zf9EciGHGSofScaO0/view?usp=sharing" target="_blank" class="project-link">View Project Screenshot</a>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Health Ease</h3>
-                        <p>Developed a hospital management platform with appointment scheduling, secure record access and payment processing
-                        using MERN.</p>
-                        <a href="https://health-ease-eight.vercel.app/" target="_blank" class="project-link">View Project</a>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Shoppex</h3>
-                        <p>Developed an e-commerce web application using HTML, CSS, and JavaScript. Implemented user-friendly 
-                            interfaces and responsive design for enhanced user experience.</p>
-                        <a href="https://umesh0027.github.io/Shoppex/" target="_blank" class="project-link">View Project</a>
-                    </div>
-
-                    <div class="project-item">
-                        <h3>Portfolio Website</h3>
-                        <p>Built a personal portfolio website using HTML and CSS. Showcased qualifications and professional skills effectively.</p>
-                        <br>
-                        <a href="https://romsha10.github.io/RomshaPortfolio/" target="_blank" class="project-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Let's Connect</h2>
-                <p><a href="https://www.linkedin.com/in/romshaahlawat/" target="_blank"><i class="fab fa-linkedin"></i> Let's
-                        Connect via LinkedIn</a></p>
-                <p><a href="mailto:romshaahlawat@gmail.com"><i class="fa-solid fa-envelope"></i>
-                        romshaahlawat@gmail.com</a></p>
-            </div>
-        </section> 
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; Romsha Ahlawat. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/romshaahlawat/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/romsha10" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+    <div class="hero-right">
+      <div class="stat-row">
+        <div class="stat-card accent animate-on-scroll">
+          <div class="stat-num" data-target="590">0</div>
+          <div class="stat-label">Transaction records in fraud detection pipeline</div>
         </div>
-    </footer>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num" data-target="4.7" data-decimals="1">0</div>
+          <div class="stat-label">Followers across EdTech platforms</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">Projects deployed publicly - live on the web</div>
+          <div class="deployed-tag">live</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num" data-target="9.2" data-decimals="1">0</div>
+          <div class="stat-label">CGPA - B.Tech Computer Science</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-card wide animate-on-scroll">
+          <div class="card-meta-tag">Dissertation Focus</div>
+          <div class="card-focus-title">Fair Ranking &amp; Sensitive Information Retrieval</div>
+          <div class="card-focus-sub">University of Glasgow · IR Research Group</div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <div class="section-divider"></div>
+
+  <section id="about">
+    <div class="section-label">About Romsha</div>
+    <h2 class="section-title">Data scientist with a<br><span class="accent-glow">social mission</span></h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am a Data Scientist and MSc candidate at the University of Glasgow, specialising in <strong class="highlight-text">Machine Learning, Fair Ranking, and ESG Analytics</strong>. My work sits at the intersection of rigorous technical research and real-world impact - I build systems that don't just predict well, but predict fairly.</p>
+        <p>Before Glasgow, I founded <strong>ENGIMY</strong> - an MSME registered EdTech social enterprise delivering free, high-quality computer science education to students who can't afford it. Growing from zero to 4,700+ followers, it taught me that data without storytelling is noise, and that the best analysts understand their audience deeply.</p>
+        <p>I've worked across <strong class="highlight-text">healthcare analytics, financial fraud detection, ESG intelligence, and government data</strong> - building end-to-end pipelines, deploying live tools, and presenting findings to non-technical stakeholders. I hold a Gold badge in both SQL and Python on HackerRank, and certifications from Google, Michigan, and Microsoft.</p>
+        <p>I'm based in Glasgow, available immediately on a Graduate Route Visa, with full right to work across the UK.</p>
+      </div>
+
+      <div class="about-right">
+        <div class="education-card animate-on-scroll">
+          <div class="edu-degree">MSc Data Science</div>
+          <div class="edu-school">University of Glasgow, United Kingdom</div>
+          <div class="edu-detail">Sept 2025 - Sept 2026 · IR Research Group</div>
+        </div>
+        <div class="education-card animate-on-scroll">
+          <div class="edu-degree">B.Tech Computer Science &amp; Engineering</div>
+          <div class="edu-school">BMCEM, GGSIPU, India</div>
+          <div class="edu-detail">2020 - 2024 · CGPA 9.2/10 · Published researcher</div>
+        </div>
+
+        <div class="certifications-container">
+          <div class="cert-label">Verified Certifications</div>
+          <div class="cert-grid">
+            <span class="cert-pill">Google Advanced Data Analytics</span>
+            <span class="cert-pill">Applied Data Science · U of Michigan</span>
+            <span class="cert-pill">Azure Fundamentals AZ-900</span>
+            <span class="cert-pill">Power BI PL-300</span>
+            <span class="cert-pill">HackerRank SQL Gold</span>
+            <span class="cert-pill">HackerRank Python Gold</span>
+            <span class="cert-pill">McKinsey Forward Program</span>
+            <span class="cert-pill">Cisco Data Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <div class="skills-section" id="skills">
+    <div class="skills-wrapper">
+      <div class="section-label">Technical Stack</div>
+      <h2 class="section-title">Engineered Capabilities</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">Languages &amp; Databases</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">ML &amp; AI Frameworks</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">SHAP</span>
+            <span class="skill-tag">BERT</span>
+            <span class="skill-tag">BioBERT</span>
+            <span class="skill-tag">Fairlearn</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">NLP &amp; Semantic Systems</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">spaCy</span>
+            <span class="skill-tag">NLTK</span>
+            <span class="skill-tag">Sentence Transformers</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Semantic Search</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">Data Architect &amp; Viz</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">DAX</span>
+            <span class="skill-tag">Plotly</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Prophet</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">Cloud Infrastructure</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Databricks</span>
+            <span class="skill-tag">dbt</span>
+            <span class="skill-tag">Microsoft Fabric</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <div class="skill-group-title">Domains &amp; Methods</div>
+          <div class="skill-tags">
+            <span class="skill-tag neutral">Fair Ranking</span>
+            <span class="skill-tag neutral">Healthcare Analytics</span>
+            <span class="skill-tag neutral">ESG Intelligence</span>
+            <span class="skill-tag neutral">Fraud Detection</span>
+            <span class="skill-tag neutral">Time Series</span>
+            <span class="skill-tag neutral">Anomaly Detection</span>
+            <span class="skill-tag neutral">XAI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="section-label">Selected Work</div>
+    <h2 class="section-title">Deployed Systems</h2>
+
+    <div class="projects-grid">
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">Fraud Detection Pipeline</div>
+          <span class="project-status status-live">● Live</span>
+        </div>
+        <p class="project-desc">End-to-end pipeline processing 590,000 transaction records using XGBoost and Isolation Forest. Integrates SHAP explainability layer to provide plain-English reasoning logs for flagged telemetry.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">XGBoost</span>
+          <span class="stack-tag">SHAP</span>
+          <span class="stack-tag">Streamlit</span>
+          <span class="stack-tag">SQL</span>
+        </div>
+        <div class="project-highlight">590K records · Live Audit Interface</div>
+      </div>
+
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">NHS Waiting List Oracle</div>
+          <span class="project-status status-live">● Live</span>
+        </div>
+        <p class="project-desc">Time series forecasting model predicting NHS Scotland department waiting list breaches up to 8 weeks ahead. Implements an automated risk triage dashboard in Power BI leveraging production open data.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Prophet</span>
+          <span class="stack-tag">Power BI</span>
+          <span class="stack-tag">NHS Open Data</span>
+        </div>
+        <div class="project-highlight">8-week advance breach prediction system</div>
+      </div>
+
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">Greenwashing Risk Auditor</div>
+          <span class="project-status status-live">● Live</span>
+        </div>
+        <p class="project-desc">NLP parser auditing sustainability claims from corporate annual reports. Cross-references extracted corporate metrics against structural CDP emissions data to map discrepancies and assign custom risk parameters.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">spaCy</span>
+          <span class="stack-tag">Hugging Face</span>
+          <span class="stack-tag">pdfplumber</span>
+          <span class="stack-tag">Streamlit</span>
+        </div>
+        <div class="project-highlight">ESG Intelligence · Cross-referenced validation</div>
+      </div>
+
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">Fairness-Audited Semantic Search</div>
+          <span class="project-status status-research">● Research</span>
+        </div>
+        <p class="project-desc">Semantic engine querying abstract data indexes via BioBERT. Features a contextual parity module designed to compute and flags structural demographic bias patterns embedded within historical corpuses.</p>
+        <div class="project-stack">
+          <span class="stack-tag">BioBERT</span>
+          <span class="stack-tag">FAISS</span>
+          <span class="stack-tag">PubMed API</span>
+          <span class="stack-tag">Streamlit</span>
+        </div>
+        <div class="project-highlight">Algorithmic Auditing System Framework</div>
+      </div>
+
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">Fair Search Evaluation Suite</div>
+          <span class="project-status status-research">● Research</span>
+        </div>
+        <p class="project-desc">Algorithmic suite benchmarking fairness constraints across proprietary ranking systems. Evaluated using TREC benchmark infrastructure to pinpoint and correct downstream data discrepancies.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Fairlearn</span>
+          <span class="stack-tag">SHAP</span>
+          <span class="stack-tag">Streamlit</span>
+          <span class="stack-tag">TREC datasets</span>
+        </div>
+        <div class="project-highlight">Automated Bias Mitigation Engine</div>
+      </div>
+
+      <div class="project-card animate-on-scroll">
+        <div class="project-header">
+          <div class="project-title">UK Macroeconomics Tracker</div>
+          <span class="project-status status-live">● Live</span>
+        </div>
+        <p class="project-desc">High-density multi-page telemetry dashboard tracking structural inflation components and economic indices across regional zones. Optimised with custom data parsing rules for immediate analytical lookups.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Power BI</span>
+          <span class="stack-tag">DAX</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">ONS Data</span>
+        </div>
+        <div class="project-highlight">Production ONS Data Architecture Pipeline</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="experience">
+    <div class="section-label">Production History</div>
+    <h2 class="section-title">Engineering Experience</h2>
+
+    <div class="exp-timeline">
+      <div class="exp-item animate-on-scroll">
+        <div class="exp-meta">2023 - Present · Remote, India &amp; UK</div>
+        <div class="exp-role">Founder &amp; Director</div>
+        <div class="exp-company">ENGIMY EdTech (formerly LML)</div>
+        <ul class="exp-bullets">
+          <li>Founded MSME-registered social enterprise delivering technical instruction modules to disadvantaged youth sectors.</li>
+          <li>Scaled user acquisition to 4,700+ users leveraging structured SEO mapping and demographic analytics.</li>
+          <li>Engineered custom tracking algorithms, boosting engagement profiles 5x across production surfaces.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item animate-on-scroll">
+        <div class="exp-meta">Feb 2024 - Mar 2024 · Remote</div>
+        <div class="exp-role">Data Analyst Intern</div>
+        <div class="exp-company">Connecting Dreams Foundation</div>
+        <ul class="exp-bullets">
+          <li>Transformed and scrubbed 10,000+ unstructured historical logs to secure an analytics-ready database layer.</li>
+          <li>Engineered dynamic operational tracking infrastructure inside enterprise visualizers.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item animate-on-scroll">
+        <div class="exp-meta">Jan 2024 - Feb 2024 · Remote</div>
+        <div class="exp-role">AI &amp; Data Intern</div>
+        <div class="exp-company">Edunet Foundation</div>
+        <ul class="exp-bullets">
+          <li>Implemented intent classification frameworks to accurately organize inbound query telemetry streams.</li>
+          <li>Engineered processing automation tasks, mitigating manual handling loops by 70%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="research">
+    <div class="section-label">Academic Compendiums</div>
+    <h2 class="section-title">Research Records</h2>
+
+    <div class="research-card animate-on-scroll">
+      <div class="research-content">
+        <div class="research-type">Dissertation · Core Focus</div>
+        <div class="research-title">Fair Ranking &amp; Sensitive Information Retrieval</div>
+        <p class="research-desc">Supervised by Senior Faculty within the University of Glasgow Information Retrieval Research Group. Investigating fairness constraints in ranking systems and the structural mitigation of protected-attribute leakage during content routing loops.</p>
+      </div>
+      <div class="research-badge">UofG // 26</div>
+    </div>
+
+    <div class="research-card animate-on-scroll">
+      <div class="research-content">
+        <div class="research-type">Peer-Reviewed &amp; Published · 2023</div>
+        <div class="research-title">AI-Driven Systemic Decision Systems</div>
+        <p class="research-desc">Published work investigating mathematical frameworks steering artificial intelligence optimization routines in high-stakes human resource settings. Logged during B.Tech roadmap tenure.</p>
+      </div>
+      <div class="research-badge">PUB // 23</div>
+    </div>
+  </section>
+
+  <div class="contact-section" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <div class="section-label">System Gateway</div>
+        <h2 class="section-title">Initiate<br><span class="accent-glow">Connection</span></h2>
+        <p>Actively interviewing for Data Scientist, Machine Learning Engineer, and Systems Analytics positions across Scotland and wider UK territories. Available immediately on Graduate Route status.</p>
+        <a href="mailto:ahlawatromsha@gmail.com" class="btn-primary email-btn">ahlawatromsha@gmail.com</a>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-item-icon">LOC//</span>
+          <span class="contact-item-text">Glasgow, UK (Relocation Scalable)</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">VISA//</span>
+          <span class="contact-item-text">Graduate Visa Active · Global Work Pass</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">NET//</span>
+          <span class="contact-item-text">linkedin.com/in/romsha-ahlawat</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item-icon">SRC//</span>
+          <span class="contact-item-text">github.com/romsha10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>SYSTEM CORE INTEGRITY VERIFIED // ROMSHA AHLAWAT // <span>2026</span></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
