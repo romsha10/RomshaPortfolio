@@ -1,4 +1,4 @@
-# Romsha Ahlawat — Personal Data Science Portfolio
+# Romsha Ahlawat - Personal Data Science Portfolio
 
 A premium, minimalistic, and futuristic portfolio website designed to showcase production-level data engines, machine learning pipelines, and algorithmic fairness research. Built with high performance, accessibility, and clean architecture in mind.
 
@@ -18,9 +18,9 @@ A premium, minimalistic, and futuristic portfolio website designed to showcase p
 
 ## Built With
 
-- **HTML5** — Semantic markup structure optimized for web scrapers and screen readers.
-- **CSS3** — Custom design layout featuring a bespoke deep-emerald variables system and fluid media query breakpoints.
-- **JavaScript (ES6+)** — Asynchronous Intersection Observers for cascading scroll triggers and execution-pacing intervals.
+- **HTML5** - Semantic markup structure optimized for web scrapers and screen readers.
+- **CSS3** - Custom design layout featuring a bespoke deep-emerald variables system and fluid media query breakpoints.
+- **JavaScript (ES6+)** - Asynchronous Intersection Observers for cascading scroll triggers and execution-pacing intervals.
 
 ---
 
